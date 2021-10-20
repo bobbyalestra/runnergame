@@ -31,8 +31,10 @@ while True:
     screen.blit(snail_surface, snail_rect)
     screen.blit(player_surf, player_rect)
 
+# cehcking collision
     if player_rect.colliderect(snail_rect):
         print("collide")
+
 
     pygame.display.update()
     clock.tick(60)
